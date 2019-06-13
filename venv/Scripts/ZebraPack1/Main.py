@@ -36,14 +36,15 @@ for image in images:
 f = open("test123.txt", "w+")
 f.write(datetime.datetime.now().ctime())
 
-f.write('\t')
+f.write('\n')
 
-f.write()
+f.write(str(image.get_attribute('src')))
 
+f.write('\n')
 
+f.write(str(image.get_attribute('alt')))
 
-
-
+f.write('\n')
 
 f.close()
 
